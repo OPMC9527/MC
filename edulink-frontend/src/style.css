@@ -1,0 +1,79 @@
+/* 全局样式 */
+:root {
+    /* 主题色（Element Plus 默认蓝色，可自定义） */
+    --el-color-primary: #409EFF;
+    --el-color-primary-light-3: #79bbff;
+    --el-color-primary-light-5: #a0cfff;
+    --el-color-primary-light-7: #c6e2ff;
+    --el-color-primary-dark-2: #337ecc;
+
+    /* 圆角 */
+    --el-border-radius-base: 8px;
+    --el-border-radius-small: 4px;
+    --el-border-radius-round: 20px;
+
+    /* 阴影 */
+    --el-box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+    --el-box-shadow-lighter: 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    --el-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 全局背景 */
+body {
+    background-color: #f5f7fa;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* 卡片全局样式 */
+.el-card {
+    border-radius: var(--el-border-radius-base);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.el-card:hover {
+    box-shadow: var(--el-box-shadow);
+}
+
+/* 页面主容器内边距 */
+.el-main {
+    padding: 20px;
+}
+
+/* 表格全局样式 */
+.el-table {
+    border-radius: var(--el-border-radius-base);
+    overflow: hidden;
+}
+
+.el-table th.el-table__cell {
+    background-color: #f8f9fc;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.el-table--striped .el-table__row--striped td.el-table__cell {
+    background-color: #fafbfe;
+}
+
+/* 按钮样式微调 */
+.el-button--primary {
+    --el-button-hover-bg-color: var(--el-color-primary-light-3);
+    --el-button-active-bg-color: var(--el-color-primary-dark-2);
+}
+
+.el-button {
+    border-radius: var(--el-border-radius-small);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* 标题与按钮间距 */
+}
+
+.title {
+    border-left: 4px solid var(--el-color-primary);
+    padding-left: 12px;
+}
+
