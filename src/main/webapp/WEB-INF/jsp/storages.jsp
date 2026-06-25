@@ -1,0 +1,1 @@
+<%@ include file="common.jspf" %><h2>库存管理</h2><table><tr><th>商品编号</th><th>商品名称</th><th>库存数量</th></tr><c:forEach items="${list}" var="x"><tr><td>${x.shopCode}</td><td>${x.shopName}</td><td>${x.num}</td></tr></c:forEach></table>

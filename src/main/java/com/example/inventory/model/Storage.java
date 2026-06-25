@@ -1,0 +1,2 @@
+package com.example.inventory.model;
+public class Storage { private String shopCode; private String shopName; private Integer num; public String getShopCode(){return shopCode;} public void setShopCode(String shopCode){this.shopCode=shopCode;} public String getShopName(){return shopName;} public void setShopName(String shopName){this.shopName=shopName;} public Integer getNum(){return num;} public void setNum(Integer num){this.num=num;} }
