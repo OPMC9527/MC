@@ -1,0 +1,1 @@
+<%@ include file="common.jspf" %><h2>销售单</h2><a href="sellouts/new">新增销售</a><table><tr><th>销售单号</th><th>销售日期</th><th>商品</th><th>数量</th><th>备注</th></tr><c:forEach items="${list}" var="x"><tr><td>${x.sellOutCode}</td><td><fmt:formatDate value="${x.sellDate}" pattern="yyyy-MM-dd"/></td><td>${x.shopCode} ${x.shopName}</td><td>${x.num}</td><td>${x.memo}</td></tr></c:forEach></table>
